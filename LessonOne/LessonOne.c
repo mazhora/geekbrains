@@ -5,10 +5,3 @@
  *      Author: user
  */
 
-#include <stdio.h>
-
-int main (int argc, const char* argv[]){
-	printf("Hello world\n");
-	printf("Это новая строка \tс табуляцией");
-	return 0;
-}
