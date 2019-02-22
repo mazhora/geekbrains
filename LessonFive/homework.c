@@ -14,7 +14,7 @@ int main (int argc, const char* argv[]){
 	 * Ui = ...;
 	 * R1 = ...;
 	 * R2 = ...;
-	 */
+
 
 	float Ui, R1, R2, Uo;
 
@@ -52,6 +52,11 @@ int main (int argc, const char* argv[]){
 			printf("^");
 		printf("\n");
 	}
+
+	 */
+
+	multi_main();
+	calc();
 
 	return 0;
 }
