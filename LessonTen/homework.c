@@ -98,26 +98,13 @@ int multi_main2(){
  * третье задание
  */
 
-void showLikeShort(int *array, int size){
+void showLikeShort(int *b, int size){
 
-	printf("%p\n", array);
-	/*
-	printf("%d\n", array[0]);
-	int ds = size * 2;
-	short sArray[ds];
-	printf("\n");
-	printf("%p\n", sArray);
-	printf("%d\n", sArray[0]);
-	printf("\n");
-	sArray = &array;
-	*sArray = array;
-	printf("%p\n", sArray);
-	printf("%d\n", sArray[0]);
-	printf("\n");
-*/
 	int i = 0;
+	short *a = (short int *)b;
+	printf("%p\n", a);
 	for (i=0; i < size *2 ; i++){
-		printf(" %d ", *(array + i*sizeof(short)));
+		printf(" %d ", *(a + i));
 	}
 
 }
@@ -128,11 +115,12 @@ int multi_main3(){
 	printf("\n");
 	printf("\n");
 	int i;
-	int array3[SA] = {60000,0,4,4,6,6,8,8,0,10};
+	int array3[SA] = {65535,65536,4,4,6,6,8,8,0,10};
 	for (i=0; i < SA; i++){
 		printf(" %d ", *(array3 + i));
 	}
 	printf("\n");
+	printf("%p\n",  array3);
 	showLikeShort(array3, SA);
 
 	return 0;
