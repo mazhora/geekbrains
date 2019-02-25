@@ -1,1 +1,0 @@
-homework.o: ../homework.c
