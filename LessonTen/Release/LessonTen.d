@@ -1,0 +1,1 @@
+LessonTen.o: ../LessonTen.c
