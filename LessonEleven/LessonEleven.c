@@ -7,14 +7,21 @@
 
 
 #include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 
-char* lalala(){
-	return "Hello";
+void lalala(char* input, char* output){
+	char welcome[256] = "hello, ";
+	if (strcmp("eve", input) == 0){
+		input = "Master";
+	}
+	strcat(welcome, input);
+	strcpy(output, welcome);
 }
 
 int main (int argc, const char* argv[]){
 
-	char charr[256] = "это строка!";
+	char charr[] = "это строка!";
 	char* chpoint = "это тоже строка";
 
 	printf("%s\n", charr);
@@ -25,8 +32,14 @@ int main (int argc, const char* argv[]){
 	printf("%s\n", charr);
 
 
-	printf("%s\n", lalala());
-        
+	char name[256];
+	char result[256];
+	gets(name);
+	puts(name);
+	puts("");
+
+	lalala(name, result);
+	puts(result);
 	return 0;
 }
 

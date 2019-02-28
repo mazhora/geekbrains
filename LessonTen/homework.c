@@ -101,7 +101,7 @@ int multi_main2(){
 void showLikeShort(int *b, int size){
 
 	int i = 0;
-	short *a = (short int *)b;
+	short *a = b;
 	printf("%p\n", a);
 	for (i=0; i < size *2 ; i++){
 		printf(" %d ", *(a + i));
