@@ -6,6 +6,7 @@
  */
 
 #include <stdio.h>
+#include <string.h>
 #define SIZE 10
 
 int main(int argc, const char* argv[]){
@@ -35,6 +36,10 @@ int main(int argc, const char* argv[]){
 	for (i = 0; i < SIZE; i++) printf("%d ", array[i]);
 	printf("\n");
 
+	main2();
+	main3();
+	main4();
+	main5();
 
 	return 0;
 }
